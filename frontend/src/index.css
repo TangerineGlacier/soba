@@ -1,7 +1,15 @@
+ /* Import Montserrat font */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
  @import "tailwindcss";
  @plugin './hero.ts';
  @source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
  @custom-variant dark (&:is(.dark *));
+
+ /* Set Montserrat as the default font family */
+ * {
+   font-family: 'Montserrat', sans-serif;
+ }
 
  @theme inline {
   --animate-meteor-effect: meteor 5s linear infinite;
