@@ -29,10 +29,10 @@ export const authLogin = async (
 ): Promise<LoginInterface> => {
   // Handle access token
   try {
-    const url = setBaseUrl(`/auth/sign-in/${provider}`);
+    const url = setBaseUrl(`/auth/signin/${provider}`);
     const resp = await axios.post(
       url,
-      { token: access_token },
+      { access_token: access_token },
       {
         headers: {
           "Content-Type": "application/json",
